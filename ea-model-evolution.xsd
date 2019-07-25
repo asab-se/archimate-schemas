@@ -4,7 +4,7 @@
            version="3.0"
            attributeFormDefault="unqualified">
 
-    <xs:simpleType name="status">
+    <xs:simpleType name="statusEnum">
       <xs:restriction base="xs:string">
         <xs:enumeration value="added"/>
         <xs:enumeration value="deleted"/>
@@ -15,6 +15,3 @@
 
     <xs:attribute name="status" type="statusEnum"/>
 </xs:schema>
-
-
-
