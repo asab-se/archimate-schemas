@@ -12,6 +12,8 @@
         <xs:enumeration value="unchanged"/>
       </xs:restriction>
     </xs:simpleType>
+
+    <xs:attribute name="status" type="statusEnum"/>
 </xs:schema>
 
 
