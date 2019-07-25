@@ -4,5 +4,15 @@
            version="3.0"
            attributeFormDefault="unqualified">
 
-    <xs:attribute name="status"/>
+    <xs:simpleType name="status">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="added"/>
+        <xs:enumeration value="deleted"/>
+        <xs:enumeration value="updated"/>
+        <xs:enumeration value="unchanged"/>
+      </xs:restriction>
+    </xs:simpleType>
 </xs:schema>
+
+
+
