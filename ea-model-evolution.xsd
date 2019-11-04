@@ -15,5 +15,23 @@
       </xs:restriction>
     </xs:simpleType>
 
+    <xs:simpleType name="alignModelMetaEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="removed"/>
+        <xs:enumeration value="rerouted"/>
+        <xs:enumeration value="reroutedByFlowRuleOne"/>
+        <xs:enumeration value="reroutedByFlowRuleTwo"/>
+        <xs:enumeration value="reroutedByTriggeringRuleOne"/>
+        <xs:enumeration value="reroutedByTriggeringRuleTwo"/>
+        <xs:enumeration value="reroutedByTriggeringTransitivity"/>
+        <xs:enumeration value="reroutedButRemoved"/>
+        <xs:enumeration value="unchanged"/>
+        <xs:enumeration value="leastSignificant"/>
+        <xs:enumeration value="unchangedLeastSignificant"/>
+        <xs:enumeration value="notLeastSignificant"/>
+      </xs:restriction>
+    </xs:simpleType>
+
     <xs:attribute name="status" type="statusEnum"/>
+    <xs:attribute name="alignModelMeta"/>
 </xs:schema>
